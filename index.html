@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generator tekstów Na'voka (Nieoficjalny spinoff).</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8"> 
+</head>
+
+<body onload="init_canvas('c3');">
+    <div>
+        <!--<canvas height="100" style="width: 24%;" id="c1" style="display: inline-block;">:(</canvas>-->
+        <marquee style="display: inline-block;" width="50%">przewijany tekst</marquee>
+        <!--<canvas height="100" style="width: 24%;" id="c2" style="display: inline-block;">:(</canvas>-->
+    </div>
+    <a href="about.html">O stronie.</a>
+    <h1 class="sr">Nieoficjalny spinoff<br>Generatora tekstów Na'voka</h1>
+    <p class="sr"><canvas id="c3" height="200" width="300">Not supporting WebGl</canvas></p>
+    <p class="sr"><button onclick="gen()">Generuj</button></p>
+    <p class="sr" id="genOut"></p>
+
+    <img id="texture" src="t1.jpg" height="0" width="0">
+    <script src="gen.js"></script>
+    <script src="gl-matrix.js"></script>
+    <script src="wgl.js"></script>
+</body>
+
+</html>
